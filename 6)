@@ -1,0 +1,33 @@
+O(n^2)
+void  bubble(int* arr, int size) {
+    int tmp;
+if (size <= 0) {
+        
+    return;
+    }
+else{
+for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                tmp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = tmp;
+            }
+        }
+    }
+}
+ void fillArr(int* arr, int size){
+for (int i = 0; i < size; i++) {
+        cout << "arr[" << i << "] = ";
+        cin >> arr[i];
+    }
+}
+ void print(int* arr, int size) {
+     for (int i = 0; i < size; i++) {
+         cout << arr[i] << " ";
+     }
+     cout << endl;
+
+ }
+}
+
